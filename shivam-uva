@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- Include CSS styles for the form -->
+    <style>
+        /* Apply some basic styling to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8674eb;
+        }
+
+        /* Create a container for the form */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #72f3e8;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Center the form title*/ 
+        .container h2 {
+            text-align: center;
+        }
+
+        /* Style form groups for input fields */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Style labels for input fields */
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Style input fields */
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover */
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a container for the form -->
+    <div class="container">
+        <!-- Form title -->
+        <h2>Login</h2>
+        <!-- Create a form with POST method -->
+        <form action="#" method="post">
+            <!-- Create a form group for the username field -->
+            <div class="form-group">
+                <!-- Label for the username field -->
+                <label for="username">Username</label>
+                <!-- Input field for the username with the id "username" -->
+                <input type="text" id="username" name="username" required>
+            </div>
+            <!-- Create a form group for the email field -->
+            <div class="form-group">
+                <!-- Label for the email field -->
+                <label for="email">Email</label>
+                <!-- Input field for the email with the id "email" -->
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Create a form group for the password field -->
+            <div class="form-group">
+                <!-- Label for the password field -->
+                <label for="password">Password</label>
+                <!-- Input field for the password with the id "password" -->
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Create a form group for the submit button -->
+            <div class="form-group">
+                <!-- Submit button with "Login" as the label -->
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
